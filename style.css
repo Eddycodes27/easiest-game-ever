@@ -3,22 +3,27 @@
     margin: 0;
     overflow-x: hidden;
 }
+
 .game{
-    width: 500px;
-    height: 200px;
+    background-image: url('space.jpg');
+    width: 800px;
+    height: 600px;
     border: 1px solid black;
     margin: auto;
 }
+
 #character{
-    width: 20px;
-    height: 50px;
-    background-color: red;
+    width: 221px;
+    height: 154px;
+    background-image: url('ship.png');
     position:relative;
-    top: 150px;
+    top: 200px;
 }
+
 .animate{
-    animation: jump 0.3s linear;
+    animation: jump 0.6s linear;
 }
+
 @keyframes jump{
     0%{top: 150px;}
     30%{top: 100px;}
@@ -27,18 +32,20 @@
 }
 
 #block{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+    background-image: url('rock.png');
+    width: 120px;
+    height: 120px;
     position: relative;
-    top: 130px;
+    top: 95px;
     left: 500px;
     animation: block 1s infinite linear;
 }
+
 @keyframes block{
     0%{left: 500px}
-    100%{left: -20px}
+    100%{left: -100px}
 }
+
 p{
     text-align: center;
 }
